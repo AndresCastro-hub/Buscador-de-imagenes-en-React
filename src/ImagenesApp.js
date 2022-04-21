@@ -5,16 +5,12 @@ import logo from './img/img.jpg'
 
 export const ImagenesApp = () => {
 
-    const [categorias, setCategorias] = useState(['Naturaleza'])
+    const [categorias, setCategorias] = useState([''])
 
-    // const agregarElemento = () => {
-    //     setCategorias([...categorias, 'Goku']);
-    // }
+    console.log(categorias)
 
     return (
         <>
-
-       
 
             <div  className='fondo'> 
                 <h1 className='fondo-title' >Busca las mejores imagenes</h1>
@@ -33,8 +29,12 @@ export const ImagenesApp = () => {
                    ) 
                }
 
-               
            </ol>
+
+           {
+               categorias.length === 1 && <h3 className='no-resultados'>No hay resultados, ingrese una palabra..</h3> 
+           }
+
         </>
     )
 }

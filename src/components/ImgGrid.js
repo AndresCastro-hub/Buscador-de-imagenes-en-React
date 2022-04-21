@@ -12,22 +12,25 @@ export const ImgGrid = ({category}) => {
             .then( imgs => setImagenes(imgs))
     },[category])
 
- 
+    console.log(category)
+
     return (
         <>
-            <h3>{category}</h3>
-                <div className='card-grid'>
+            <h3 className='no-resultados1'>{category}</h3> 
+       
+            <div className='card-grid'>
                     
-                        {
-                            imagenes.map( img => 
-                                <ImgGridItem
-                                    key= {img.id} 
-                                    {...img}
-                                />
-                            )
-                        }
+                {
+                    imagenes.map( img => 
+                        <ImgGridItem
+                             key= {img.id} 
+                            {...img}
+                        />
+                        )
+                }
                     
-                </div>
+            </div>   
+        
         </>
     )
 }

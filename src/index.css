@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 *{
   margin: 0;
@@ -83,3 +84,19 @@ input{
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
+
+.no-resultados{
+  text-align: left;
+  color: black;
+  font-family: 'Fira Sans', sans-serif;
+  margin-left: 2px;
+  font-size: 30px;
+}
+ 
+ .no-resultados1{
+  text-align: center;
+  color: black;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 5px 5px;
+  font-size: 30px;
+ }
