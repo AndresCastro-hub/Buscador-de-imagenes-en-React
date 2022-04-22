@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import { AgregarCategoria } from './components/AgregarCategoria'
 import { ImgGrid } from './components/ImgGrid'
-import logo from './img/img.jpg'
 
 export const ImagenesApp = () => {
 
     const [categorias, setCategorias] = useState([''])
-
-    console.log(categorias)
 
     return (
         <>

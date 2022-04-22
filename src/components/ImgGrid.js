@@ -12,11 +12,9 @@ export const ImgGrid = ({category}) => {
             .then( imgs => setImagenes(imgs))
     },[category])
 
-    console.log(category)
-
     return (
         <>
-            <h3 className='no-resultados1'>{category}</h3> 
+            <h3 className='no-resultados1 animate__animated animate__fadeInLeft'>{category}</h3> 
        
             <div className='card-grid'>
                     
